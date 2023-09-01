@@ -1,0 +1,202 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Sara Ahangari, Shahid Beheshti University, LIC=8VRJ7-EDTTE-GK3BG-V6JNJ-7DGA0-KFKN5
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.164.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\RIZ\final-Project\Server\server.uvprojx
+Project File Date:  06/30/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+server.c(1): warning: In file included from...
+C:/Users/Baran/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(29): warning: In file included from...
+./RTE/Device/STM32F401RETx\stm32f4xx_hal_conf.h(405): warning: In file included from...
+C:/Users/Baran/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_adc.h(31): warning: In file included from...
+C:/Users/Baran/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h(1880): warning: unused parameter 'Register' [-Wunused-parameter]
+__STATIC_INLINE uint32_t LL_ADC_DMA_GetRegAddr(ADC_TypeDef *ADCx, uint32_t Register)
+                                                                           ^
+C:/Users/Baran/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h(4018): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return (uint16_t)(READ_BIT(ADCx->DR, ADC_DR_DATA));
+  ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Baran/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h(4033): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return (uint16_t)(READ_BIT(ADCx->DR, ADC_DR_DATA));
+  ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+server.c(5): warning: In file included from...
+./lookup_table.h(4): warning: no previous extern declaration for non-static variable 'sine_lookup' [-Wmissing-variable-declarations]
+uint16_t sine_lookup[200] = {100, 103, 106, 109, 112, 115, 119, 122,
+         ^
+./lookup_table.h(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t sine_lookup[200] = {100, 103, 106, 109, 112, 115, 119, 122,
+^
+./lookup_table.h(30): warning: no previous extern declaration for non-static variable 'square_lookup' [-Wmissing-variable-declarations]
+uint16_t square_lookup[200] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,
+         ^
+./lookup_table.h(30): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t square_lookup[200] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,
+^
+./lookup_table.h(38): warning: no previous extern declaration for non-static variable 'triangle_lookup' [-Wmissing-variable-declarations]
+uint16_t triangle_lookup[200] = {15,30,45,60,75,90,105,120,135,150,165,180,195,210,225,240,255,270,285,300,315,330,345,
+         ^
+./lookup_table.h(38): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t triangle_lookup[200] = {15,30,45,60,75,90,105,120,135,150,165,180,195,210,225,240,255,270,285,300,315,330,345,
+^
+./lookup_table.h(46): warning: no previous extern declaration for non-static variable 'fabs_sin_lookup' [-Wmissing-variable-declarations]
+uint16_t fabs_sin_lookup[200] = {100, 103, 106, 109, 112, 115, 119, 122,
+         ^
+./lookup_table.h(46): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t fabs_sin_lookup[200] = {100, 103, 106, 109, 112, 115, 119, 122,
+^
+./lookup_table.h(72): warning: no previous extern declaration for non-static variable 'sawtooth_lookup' [-Wmissing-variable-declarations]
+uint16_t sawtooth_lookup[200] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,
+         ^
+./lookup_table.h(72): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t sawtooth_lookup[200] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,
+^
+./lookup_table.h(91): warning: excess elements in array initializer [-Wexcess-initializers]
+0x5DC, 0x5DC, 0x5DC, 0x5DC, 0x5DC, 0x5DC, 0x5DC, 0x5DC, 0x5DC, 0x5DC, 0x5DC, 0x5DC, 0x672, 0x672, 0x672, 0x672, 0x672,
+                                                                                    ^~~~~
+./lookup_table.h(80): warning: no previous extern declaration for non-static variable 'ramp_lookup' [-Wmissing-variable-declarations]
+uint16_t ramp_lookup[200] = {0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96,
+         ^
+./lookup_table.h(80): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t ramp_lookup[200] = {0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96, 0x96,
+^
+./lookup_table.h(100): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+server.c(100): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIOA->MODER &=  ~0x0000000C;
+                 ~~  ^~~~~~~~~~~
+server.c(119): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    TIM2->PSC = (((8000000) / (frequency_global * 200))) - 1;           //TIM2->PSC = (Input Clock Frequency) / (Desired Output Frequency)    ?
+              ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+server.c(131): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                GPIOC->ODR = (int)(10000*(sin((M_TWOPI/360)*frequency_global*time / 1000)+1));
+                           ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+server.c(138): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                GPIOC->ODR = (64 * sign(sin(frequency_global * M_TWOPI * time / 1000))) ;
+                           ~  ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+server.c(145): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                GPIOC->ODR = (int)(16384*(fabs(sin((M_TWOPI/360)*time*frequency_global/100)))); 
+                           ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+server.c(241): warning: function 'Error_Handler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+17 warnings generated.
+compiling server.c...
+linking...
+Program Size: Code=4374 RO-data=454 RW-data=2428 ZI-data=1652  
+FromELF: creating hex file...
+".\Objects\server.axf" - 0 Error(s), 17 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.0.pack
+                Keil.STM32F4xx_DFP.2.17.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: Classic Version: 1.8.1
+   * Component: ADC Version: 1.8.1
+   * Component: Common Version: 1.8.1
+   * Component: Cortex Version: 1.8.1
+   * Component: DMA Version: 1.8.1
+   * Component: EXTI Version: 1.8.1
+   * Component: GPIO Version: 1.8.1
+   * Component: PWR Version: 1.8.1
+   * Component: RCC Version: 1.8.1
+   * Component: TIM Version: 1.8.1
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F401RETx
+  .\RTE\_Target_1
+  C:\Users\Baran\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  C:\Users\Baran\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  C:\Users\Baran\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.0\Drivers\STM32F4xx_HAL_Driver\Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Device:STM32Cube Framework:1.0.0 (API)
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:STM32Cube Framework:Classic:1.8.1
+      Include file:  MDK\Templates\Inc\stm32f4xx_it.h
+      Include file:  MDK\Templates\Inc\stm32f4xx_hal_conf.h
+      Source file:   MDK\Templates\Src\main.c
+      Source file:   MDK\Templates\Src\stm32f4xx_hal_msp.c
+      Include file:  MDK\Templates\Inc\main.h
+      Source file:   MDK\Templates_LL\Src\main.c
+      Include file:  MDK\Templates_LL\Inc\main.h
+      Source file:   MDK\Templates\Src\stm32f4xx_it.c
+      Include file:  CMSIS\Driver\Config\RTE_Device.h
+
+   * Component: Keil::Device:STM32Cube HAL:ADC:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:DMA:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
+
+   * Component: Keil::Device:STM32Cube HAL:EXTI:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
+
+   * Component: Keil::Device:STM32Cube HAL:TIM:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c
+
+   * Component: Keil::Device:Startup:2.6.3
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f401xe.s
+      Source file:   MDK\Device\Source\ARM\STM32F401xx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
