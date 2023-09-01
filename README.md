@@ -1,6 +1,7 @@
 # SPI Communication between Two STM32 Boards using Proteus and Keil
 
 This project demonstrates the communication between two STM32 microcontroller boards using the Serial Peripheral Interface (SPI) protocol. The SPI protocol allows for full-duplex, synchronous communication between a master and one or more slave devices. The project utilizes Proteus for simulation and Keil as the development environment, along with the STM32 HAL (Hardware Abstraction Layer) library for firmware development.
+The user chooses a wave and its frequency and then determines how long he wants it to be shown through the oscilloscope, via keypad. These pieces of information are sent via SPI protocol from the master to the slave. Then the slave makes the desired wave. 
 
 ## Hardware Requirements
 
